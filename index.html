@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="shortcut icon" href="./img/logo/image-removebg-preview (4).png" type="image/png">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body >
+    <div class="app" id="appMain">
+        <header class="header">
+            <div class="grid header header__content ">
+                <div class="grid wide">
+                    <ul class="header__content-list ">
+                        <li class="header__content-item">
+                            <div class="header__content--contact">
+                                <div href="" class="header__content--phone">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <p class="header__content--text">0378189209</p>
+                            </div>
+                        </li>
+                        <li class="header__content-item">
+                            <div onclick="closeMenu()" class="body__cover"></div>
+                            <div onclick="inMenu()" class="header__content--bars">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <div class="header__menu-close">
+                                        <div onclick="closeMenu()" class="header__menu-link--close">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="header__menu-user">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="header__menu--account">
+                                        <div class="header__menu--login">
+                                            <a href="" class="header__menu-link">Đăng Nhập</a>
+                                        </div>
+                                        <div class="header__menu-shotbar"></div>
+                                        <div class="header__menu--signUp">
+                                            <a href="" class="header__menu-link">Đăng Ký</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">TRANG CHỦ</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <div onclick="menuShop()" class="header__menu-shop">
+                                        <div class="header__menu-link header__menu-shop--link">SẢN PHẨM
+                                            <div class="header__menu-icon">
+                                                <i class="fas fa-angle-right"></i>
+                                            </div>
+                                        </div>
+                                        <ul class="header__menu-list2">
+                                            <li class="haeder__menu-item2">
+                                                <a href="tshirts.html" class="header__menu-link2">T-SHIRTS</a>
+                                            </li>
+                                            <li class="haeder__menu-item2">
+                                                <a href="" class="header__menu-link2">SHIRTS</a>
+                                            </li>
+                                            <li class="haeder__menu-item2">
+                                                <a href="" class="header__menu-link2">SWEATERS</a>
+                                            </li>
+                                            <li class="haeder__menu-item2">
+                                                <a href="" class="header__menu-link2">HOODIES</a>
+                                            </li>
+                                            <li class="haeder__menu-item2">
+                                                <a href="" class="header__menu-link2">SHORTS</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">BLOG</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">LIÊN HỆ</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">GIỚI THIỆU</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="https://www.facebook.com/phat.ngo.5454" class="header__menu-link">TRANG FACEBOOK</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">TRANG INTAGRAM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__content-item">
+                            <a href="#" class="header__content-logo">
+                                <img src="./img/logo/image-removebg-preview (4).png" alt="Vergency">
+                            </a>
+                        </li>
+                        <li class="header__content-item">
+                            <ul class="header__content-list2">
+                                <li class="header__content-item2">
+                                    <div class="header__content-put">
+                                        <input type="text" class="header__content-input"
+                                            placeholder="Nhập để tìm kiếm sản phẩm">
+                                    </div>
+                                    <div class="header__content-label" onclick="search();">
+                                        <div class="header__content-search">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__content-item2">
+                                    <a href="./login.html" class="header__content-account">
+                                        <i class="fas fa-user-alt"></i>
+                                    </a>
+                                </li>
+                                <li class="header__content-item2">
+                                    <div class="header__content-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <p>0</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid header header__navbar">
+                <div class="grid wide ">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">TRANG CHỦ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-link">SẢN PHẨM
+                                <div class="header__navbar-icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                                <ul class="header__navbar-list2">
+                                    <li class="haeder__navbar-item2">
+                                        <a href="./tshirts.html" class="header__navbar-link2">T-SHIRTS</a>
+                                    </li>
+                                    <li class="haeder__navbar-item2">
+                                        <a href="./shirt.html" class="header__navbar-link2">SHIRTS</a>
+                                    </li>
+                                    <li class="haeder__navbar-item2">
+                                        <a href="" class="header__navbar-link2">SWEATERS</a>
+                                    </li>
+                                    <li class="haeder__navbar-item2">
+                                        <a href="" class="header__navbar-link2">HOODIES</a>
+                                    </li>
+                                    <li class="haeder__navbar-item2">
+                                        <a href="" class="header__navbar-link2">SHORTS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">BLOG</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">LIÊN HỆ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">GIỚI THIỆU</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="https://www.facebook.com/phat.ngo.5454" class="header__navbar-link">TRANG FACEBOOK</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">TRANG INTAGRAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div onclick="searchClose()" class="app__container">
+            <div class="slide">
+                <ul class="riot-slider" data-do-console-log="true" data-use-material-icons="true"
+                    data-is-auto-play="true" data-do-show-buttons="none" data-do-swipe-on-touchscreen="true"
+                    data-button-number-display="never" data-previous-next-display="sides" data-theme="default"
+                    data-slide-hold-seconds="3">
+                    <li>
+                        <img src="/img/slide/1.jpg" alt="Alt Text" />
+                    </li>
+                    <li>
+                        <img src="/img/slide/2.jpg" alt="Alt Text" />
+                    </li>
+                </ul>
+            </div>
+            <div class="documents">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="documents__content">
+                                <div class="documents__content-icon">
+                                    <i class="fas fa-truck-moving"></i>
+                                </div>
+                                <div class="documents__content-document">
+                                    <h4 class="documents__content-title">
+                                        GIAO HÀNG TOÀN QUỐC
+                                    </h4>
+                                    <p class="documents__content-text">
+                                        Vì tình hình dịch covid còn nhạy cảm nên thời gian giao hàng có thể lâu hơn dự
+                                        kiến, mong quý khách hàng cảm thông và cố gắng đợi hàng giúp shop.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="documents__content">
+                                <div class="documents__content-icon">
+                                    <i class="fas fa-sync"></i>
+                                </div>
+                                <div class="documents__content-document">
+                                    <h4 class="documents__content-title">
+                                        CHÍNH SÁCH ĐỔI TRẢ HÀNG
+                                    </h4>
+                                    <p class="documents__content-text">
+                                        Sản phẩm được phép đổi hàng trong vòng 36h nếu phát sinh lỗi từ nhà sản xuất
+                                        (Yêu
+                                        cầu: hình ảnh phần bị lỗi rõ nét, chi tiết và đầy đủ).
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="documents__content">
+                                <div class="documents__content-icon">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <div class="documents__content-document">
+                                    <h4 class="documents__content-title">
+                                        GIAO HÀNG NHẬN TIỀN VÀ KIỂM KÊ ĐƠN HÀNG
+                                    </h4>
+                                    <p class="documents__content-text">
+                                        Được phép kiểm hàng trước khi thanh toán. Lưu ý: Trường hợp Quý khách đã nhận
+                                        hàng
+                                        về nhà, vui lòng quay video unbox sản phẩm trong tình trạng nguyên vẹn để có thể
+                                        chứng minh shop giao nhầm hoặc thiếu sản phẩm, trường hợp không có video shop
+                                        không
+                                        thể hỗ trợ.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="documents__content">
+                                <div class="documents__content-icon">
+                                    <i class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="documents__content-document">
+                                    <h4 class="documents__content-title">
+                                        ĐẶT HÀNG ONLINE VÀ KIỂM TRA ĐƠN HÀNG VUI LÒNG LIÊN HỆ
+                                    </h4>
+                                    <p class="documents__content-text">
+                                        Hotline: 0378189209.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-12">
+                            <div class="documents__content-document2">
+                                <h2 class="documents__content-title2">
+                                    CÔNG TY TNHH VERGENCY
+                                </h2>
+                                <p class="documents__content-text2">
+                                    Tạo ra nhiều sản phẩm cao cấp nhưng giá thành hấp dẫn, đem đến điều bất ngờ và những
+                                    trải nghiệm thú vị kèm theo sự hài lòng, niềm tin tuyệt đối cho khách hàng. Đó là sứ
+                                    mệnh của chúng tôi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide">
+                    <div class="document__timess">
+                        <div class="documents__time">
+                            <div class="btn documents__time-hh ">
+                                23
+                            </div>
+                            <p class="documents__time-text">ngày</p>
+                        </div>
+                        <div class="documents__time">
+                            <div class="btn documents__time-hh ">
+                                23
+                            </div>
+                            <p class="documents__time-text">giờ</p>
+                        </div>
+                        <div class="documents__time">
+                            <div class="btn documents__time-hh ">
+                                59
+                            </div>
+                            <p class="documents__time-text">phút</p>
+                        </div>
+                        <div class="documents__time">
+                            <div class="btn documents__time-hh ">
+                                59
+                            </div>
+                            <p class="documents__time-text">giây</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content" class="">
+                <div class="grid wide content">
+                    <div class="row">
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="https://product.hstatic.net/200000305259/product/vgv-tee_art_v10_wht_2_c477e18bde8e406ab37ef977e491c00f_master.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="https://product.hstatic.net/200000305259/product/vgv-tee_art_v10_green_2_400e4cc368fd4b0bb71721e69f12845a_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgv-tee_art_v10_blk_2_3b50841788734941b7c4caf59da6a1e6_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_art_v10_fuchsia_1_fe2c9f0e29854d74bc38530ed20bf237_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_v8br-lucky_1_9ee3fe5ba5d3407e945cbec4fe8be8a9_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_look_at_me_emb_matcha_1_102a51c1130f4c8eb7739a02dc0c2cd2_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_street_red_1_64596e495e654efda8e5a62673d4e167_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_dice_blk_1_7cecdc27cdf74258902f14410115bcf1_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_yahi_wht_1_a1aee9e095f74b5489dfc216189521f9_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="https://product.hstatic.net/200000305259/product/vgv-tee_art_v10_wht_2_c477e18bde8e406ab37ef977e491c00f_master.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="https://product.hstatic.net/200000305259/product/vgv-tee_art_v10_wht_2_c477e18bde8e406ab37ef977e491c00f_master.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_look_at_me_emb_matcha_1_102a51c1130f4c8eb7739a02dc0c2cd2_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_street_red_1_64596e495e654efda8e5a62673d4e167_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_dice_blk_1_7cecdc27cdf74258902f14410115bcf1_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="//product.hstatic.net/200000305259/product/vgc-mockup_tee_july22_art_yahi_wht_1_a1aee9e095f74b5489dfc216189521f9_large.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="https://product.hstatic.net/200000305259/product/vgv-tee_art_v10_wht_2_c477e18bde8e406ab37ef977e491c00f_master.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <div class="content__product">
+                                <a href="" class="content__product-item">
+                                    <img src="https://product.hstatic.net/200000305259/product/vgv-tee_art_v10_wht_2_c477e18bde8e406ab37ef977e491c00f_master.jpg"
+                                        class="content__product-img">
+                                    </img>
+                                    <div class="btn content__product-btn">Xem nhanh</div>
+                                    <p class="content__product-text">
+                                        NOT BELOW T-SHIRT/MATCHA
+                                    </p>
+                                </a>
+                                <div class="content-product-item2">
+                                    <div class="content__product-text2">
+                                        VERGENCY
+                                    </div>
+                                    <div class="content__product-evaluate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="content__product-price">
+                                        <div class="content__product-price--item1">89.000&#8363</div>
+                                        <del class="content__product-price--item2">390.000&#8363</del>
+                                    </div>
+                                    <div class="content__product-new">new</div>
+                                    <div class="content__product-sale">-78%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="btn content__btn">
+                                <a href="">XEM TẤT CẢ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__foorter-slogan">
+                                <div class="content__foorter-left"></div>
+                                <div class="content__foorter-headding">
+                                    <h1 class="content__foorter-title">
+                                        THƯƠNG HIỆU
+                                    </h1>
+                                    <p class="content__foorter-text">
+                                        Thương hiệu nổi bật của chúng tôi
+                                    </p>
+                                </div>
+                                <div class="content__footer-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide content">
+
+                    <div class="row">
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content__category">
+                                <div class="content__category-item">
+                                    <a href="" class="content__category-link">
+                                        <img src="//theme.hstatic.net/200000305259/1000869166/14/banner_index_1.jpg?v=43"
+                                            alt="Banner 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content__category">
+                                <div class="content__category-item">
+                                    <a href="" class="content__category-link">
+                                        <img src="//theme.hstatic.net/200000305259/1000869166/14/banner_index_2.jpg?v=43"
+                                            alt="Banner 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content__category">
+                                <div class="content__category-item">
+                                    <a href="" class="content__category-link">
+                                        <img src="//theme.hstatic.net/200000305259/1000869166/14/banner_index_3.jpg?v=43"
+                                            alt="Banner 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content__category">
+                                <div class="content__category-item">
+                                    <a href="" class="content__category-link">
+                                        <img src="//theme.hstatic.net/200000305259/1000869166/14/banner_index_4.jpg?v=43"
+                                            alt="Banner 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content__category">
+                                <div class="content__category-item">
+                                    <a href="" class="content__category-link">
+                                        <img src="//theme.hstatic.net/200000305259/1000869166/14/banner_index_1.jpg?v=43"
+                                            alt="Banner 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content__category">
+                                <div class="content__category-item">
+                                    <a href="" class="content__category-link">
+                                        <img src="//theme.hstatic.net/200000305259/1000869166/14/banner_index_1.jpg?v=43"
+                                            alt="Banner 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="content__foorter-slogan">
+                                <div class="content__foorter-left"></div>
+                                <div class="content__foorter-headding">
+                                    <h1 class="content__foorter-title">
+                                        BEST SELLER
+                                    </h1>
+                                    <p class="content__foorter-text">
+                                        PRODUCTS ARE SOLD OUT VERY QUICKLY
+                                    </p>
+                                </div>
+                                <div class="content__footer-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__foorter">
+                <div class="grid wide">
+
+                    <div class="row">
+                        <div class="col m-4 c-12">
+                            <div class="content__logo-imgs">
+                                <a href="" class="content__logo-link">
+                                    <img src="//theme.hstatic.net/200000305259/1000869166/14/partner_1.png?v=27"
+                                        class="content__logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col m-4 c-12">
+                            <div class="content__logo-imgs">
+                                <a href="" class="content__logo-link">
+                                    <img src="//theme.hstatic.net/200000305259/1000869166/14/partner_3.png?v=27"
+                                        class="content__logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col m-4 c-12">
+                            <div class="content__logo-imgs">
+                                <a href="" class="content__logo-link">
+                                    <img src="//theme.hstatic.net/200000305259/1000869166/14/partner_2.png?v=27"
+                                        class="content__logo-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="foorter">
+            <div class="grid header">
+                <div class="footer__color">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-3 m-4 c-6 ">
+                                <div class="foorter__content">
+                                    <h1 class="foorter__content-title">
+                                        THÔNG TIN LIÊN HỆ:
+                                    </h1>
+                                    <div class="foorter__content-documents">
+                                        <p class="foorter__content-text">
+                                            5/15 Tô Hiệu, Tân Thới Hòa, Tân Phú, Hồ Chí Minh (Giờ mở cửa sáng: 08H30 ->
+                                            11H30, Giờ
+                                            nghĩ
+                                            trưa: 11H30 -> 13H30, Giờ mở cửa buổi chiều: 13H30 -> 17H45) KH vui lòng đến
+                                            đúng khung
+                                            giờ
+                                            mở cửa trên để mua hàng.
+                                        </p>
+                                        <p class="foorter__content-text2">
+                                            Phone:03781892909
+                                        </p>
+                                        <p class="footer__content-text3">
+                                            Email:vohavinhtan6@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6 ">
+                                <div class="foorter__content">
+                                    <h1 class="foorter__content-title">
+                                        CHÍNH SÁCH HỖ TRỢ:
+                                    </h1>
+                                    <ul class="foorter__content-list">
+                                        <li class="foorter__content-item">
+                                            <a href="" class="foorter__content-link">Tìm kiếm</a>
+                                        </li>
+                                        <li class="foorter__content-item">
+                                            <a href="" class="foorter__content-link">Giới thiệu</a>
+                                        </li>
+                                        <li class="foorter__content-item"><a href="" class="foorter__content-link">Chính
+                                                sách đổi
+                                                trả</a></li>
+                                        <li class="foorter__content-item"><a href="" class="foorter__content-link">Chính
+                                                sách bảo
+                                                mật</a></li>
+                                        <li class="foorter__content-item"><a href="" class="foorter__content-link">Điều
+                                                khoản dịch
+                                                vụ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6 ">
+                                <div class="foorter__content">
+                                    <h1 class="foorter__content-title">
+                                        THÔNG TIN LIÊN KẾT:
+                                    </h1>
+                                    <div class="foorter__content-documents">
+                                        <p class="foorter__content-text">
+                                            Hãy kết nối với chúng tôi.
+                                        </p>
+                                        <div class="foorter__content-icon">
+                                            <div class="foorter__content-facebook">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </div>
+                                            <div class="foorter__content-instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                        </div>
+                                        <div class="foorter__content-img">
+                                            <img
+                                                src="//theme.hstatic.net/200000305259/1000869166/14/dkbocongthuong.png?v=27">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-4 c-6 ">
+                                <div class="foorter__content">
+                                    <h1 class="foorter__content-title">
+                                        THEO DÕI FANPAGE CHÚNG TÔI ĐỂ CẬP NHẬT XU HƯỚNG THỜI TRANG HOT NHẤT:
+                                    </h1>
+                                    <div class="foorter__content-link--facebook">
+                                        <a href="" class="foorter__content-link--text">Facebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-12 m-12">
+                        <div class="foorter__license">
+                            <p class="">&#169;Bản quyền thuộc về tui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="top">
+            <a href="#appMain"><i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="./sticky-sidebar-master/src/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="./assets/jav.js"></script>
+    <!-- jQuery Riot Slider Plugin Files -->
+    <link rel="stylesheet" href="responsive-carousel-riot/riot-slider.min.css" />
+    <script src="responsive-carousel-riot/riot-slider.min.js"></script>
+</body>
+
+</html>
